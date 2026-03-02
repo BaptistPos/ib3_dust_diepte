@@ -1,0 +1,1393 @@
+[
+  {
+    "name": "as.up.data.forward",
+    "time": "2026-03-02T15:35:19.486845947Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+      "end_device_ids": {
+        "device_id": "2303-002-0010",
+        "application_ids": {
+          "application_id": "dust-sensor-depth-experiment"
+        },
+        "dev_eui": "E2A75D16AADFFBD0",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B877D"
+      },
+      "correlation_ids": [
+        "gs:uplink:01KJQK11ZEXJ2P16KTSCWYN353"
+      ],
+      "received_at": "2026-03-02T15:35:19.483433596Z",
+      "uplink_message": {
+        "session_key_id": "AZyvKpenk/z4b6k+fpsmyw==",
+        "f_port": 1,
+        "f_cnt": 38,
+        "frm_payload": "sxYAAAAAAAAAAAAA4wg=",
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-07",
+              "eui": "58A0CBFFFE80131E"
+            },
+            "time": "2026-03-02T15:35:19.212225914Z",
+            "timestamp": 2138975243,
+            "rssi": -58,
+            "channel_rssi": -58,
+            "snr": 10,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4Qi9j4+wcaDAi33JbNBhDE0+OEASD4lfCmoLgC",
+            "received_at": "2026-03-02T15:35:19.228042060Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-05",
+              "eui": "58A0CBFFFE801373"
+            },
+            "time": "2026-03-02T15:35:19.213201999Z",
+            "timestamp": 2174899227,
+            "rssi": -54,
+            "channel_rssi": -54,
+            "snr": 10.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQm6iJjQgaDAi33JbNBhCeteaFASD4kuKQprkC",
+            "received_at": "2026-03-02T15:35:19.245259277Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-11",
+              "eui": "58A0CBFFFE8011AB"
+            },
+            "time": "2026-03-02T15:35:19.212548017Z",
+            "timestamp": 2127452555,
+            "rssi": -49,
+            "channel_rssi": -49,
+            "snr": 9.75,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQi7O59gcaDAi33JbNBhC4wuyHASD4jbew9bcC",
+            "received_at": "2026-03-02T15:35:19.243970126Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-06",
+              "eui": "58A0CBFFFE80128C"
+            },
+            "time": "2026-03-02T15:35:19.212785005Z",
+            "timestamp": 2148998235,
+            "rssi": -49,
+            "channel_rssi": -49,
+            "snr": 10.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ27jcgAgaDAi33JbNBhDQ9biJASD4hpvSxbgC",
+            "received_at": "2026-03-02T15:35:19.230423690Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-13",
+              "eui": "58A0CBFFFE800D93"
+            },
+            "time": "2026-03-02T15:35:19.219609022Z",
+            "timestamp": 2110932843,
+            "rssi": -51,
+            "channel_rssi": -51,
+            "snr": 9.75,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ647J7gcaDAi33JbNBhDKuf2MASD485vrt7cC",
+            "received_at": "2026-03-02T15:35:19.270576183Z"
+          }
+        ],
+        "settings": {
+          "data_rate": {
+            "lora": {
+              "bandwidth": 125000,
+              "spreading_factor": 7,
+              "coding_rate": "4/5"
+            }
+          },
+          "frequency": "868100000",
+          "timestamp": 2138975243,
+          "time": "2026-03-02T15:35:19.212225914Z"
+        },
+        "received_at": "2026-03-02T15:35:19.279053527Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+          "net_id": "000013",
+          "ns_id": "EC656E0000000181",
+          "tenant_id": "ttn",
+          "cluster_id": "eu1",
+          "cluster_address": "eu1.cloud.thethings.network"
+        }
+      }
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK11ZEXJ2P16KTSCWYN353"
+    ],
+    "origin": "ip-10-100-15-217.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK125Y0QFH4939XPW0VADN"
+  },
+  {
+    "name": "ns.up.data.process",
+    "time": "2026-03-02T15:35:19.482718452Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.UplinkMessage",
+      "raw_payload": "QH2HCyaAJgABKzAO+KEMSwpxjHRvULuYojLi",
+      "payload": {
+        "m_hdr": {
+          "m_type": "UNCONFIRMED_UP"
+        },
+        "mic": "mKIy4g==",
+        "mac_payload": {
+          "f_hdr": {
+            "dev_addr": "260B877D",
+            "f_ctrl": {
+              "adr": true
+            },
+            "f_cnt": 38
+          },
+          "f_port": 1,
+          "frm_payload": "KzAO+KEMSwpxjHRvULs=",
+          "full_f_cnt": 38
+        }
+      },
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 7,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "868100000",
+        "timestamp": 2138975243,
+        "time": "2026-03-02T15:35:19.212225914Z"
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-07",
+            "eui": "58A0CBFFFE80131E"
+          },
+          "time": "2026-03-02T15:35:19.212225914Z",
+          "timestamp": 2138975243,
+          "rssi": -58,
+          "channel_rssi": -58,
+          "snr": 10,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4Qi9j4+wcaDAi33JbNBhDE0+OEASD4lfCmoLgC",
+          "received_at": "2026-03-02T15:35:19.228042060Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-05",
+            "eui": "58A0CBFFFE801373"
+          },
+          "time": "2026-03-02T15:35:19.213201999Z",
+          "timestamp": 2174899227,
+          "rssi": -54,
+          "channel_rssi": -54,
+          "snr": 10.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQm6iJjQgaDAi33JbNBhCeteaFASD4kuKQprkC",
+          "received_at": "2026-03-02T15:35:19.245259277Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-11",
+            "eui": "58A0CBFFFE8011AB"
+          },
+          "time": "2026-03-02T15:35:19.212548017Z",
+          "timestamp": 2127452555,
+          "rssi": -49,
+          "channel_rssi": -49,
+          "snr": 9.75,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQi7O59gcaDAi33JbNBhC4wuyHASD4jbew9bcC",
+          "received_at": "2026-03-02T15:35:19.243970126Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-06",
+            "eui": "58A0CBFFFE80128C"
+          },
+          "time": "2026-03-02T15:35:19.212785005Z",
+          "timestamp": 2148998235,
+          "rssi": -49,
+          "channel_rssi": -49,
+          "snr": 10.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ27jcgAgaDAi33JbNBhDQ9biJASD4hpvSxbgC",
+          "received_at": "2026-03-02T15:35:19.230423690Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-13",
+            "eui": "58A0CBFFFE800D93"
+          },
+          "time": "2026-03-02T15:35:19.219609022Z",
+          "timestamp": 2110932843,
+          "rssi": -51,
+          "channel_rssi": -51,
+          "snr": 9.75,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ647J7gcaDAi33JbNBhDKuf2MASD485vrt7cC",
+          "received_at": "2026-03-02T15:35:19.270576183Z"
+        }
+      ],
+      "received_at": "2026-03-02T15:35:19.279053527Z",
+      "correlation_ids": [
+        "gs:uplink:01KJQK11ZEXJ2P16KTSCWYN353"
+      ],
+      "consumed_airtime": "0.066816s"
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK11ZEXJ2P16KTSCWYN353"
+    ],
+    "origin": "ip-10-100-15-78.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK125TX0DFG8YS3BAH1QGY"
+  },
+  {
+    "name": "as.up.data.forward",
+    "time": "2026-03-02T15:35:09.487788503Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+      "end_device_ids": {
+        "device_id": "2303-002-0010",
+        "application_ids": {
+          "application_id": "dust-sensor-depth-experiment"
+        },
+        "dev_eui": "E2A75D16AADFFBD0",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B877D"
+      },
+      "correlation_ids": [
+        "gs:uplink:01KJQK0R6R2A79ESYYJ2R52SB5"
+      ],
+      "received_at": "2026-03-02T15:35:09.483833532Z",
+      "uplink_message": {
+        "session_key_id": "AZyvKpenk/z4b6k+fpsmyw==",
+        "f_port": 1,
+        "f_cnt": 37,
+        "frm_payload": "sxYAAAAAAAAAAAAA4wg=",
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-13",
+              "eui": "58A0CBFFFE800D93"
+            },
+            "time": "2026-03-02T15:35:09.205209970Z",
+            "timestamp": 2100933660,
+            "rssi": -51,
+            "channel_rssi": -51,
+            "snr": 9,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQnOjm6QcaDAit3JbNBhCaqeuBASDgmp7LkrcC",
+            "received_at": "2026-03-02T15:35:09.247210503Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-07",
+              "eui": "58A0CBFFFE80131E"
+            },
+            "time": "2026-03-02T15:35:09.212063074Z",
+            "timestamp": 2128976060,
+            "rssi": -57,
+            "channel_rssi": -57,
+            "snr": 9.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QvLGW9wcaDAit3JbNBhCgtceEASDgvPKG+7cC",
+            "received_at": "2026-03-02T15:35:09.227608504Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-05",
+              "eui": "58A0CBFFFE801373"
+            },
+            "time": "2026-03-02T15:35:09.212995052Z",
+            "timestamp": 2164900044,
+            "rssi": -49,
+            "channel_rssi": -49,
+            "snr": 10.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQzIGniAgaDAit3JbNBhC0xuKEASDgueTwgLkC",
+            "received_at": "2026-03-02T15:35:09.241880025Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-11",
+              "eui": "58A0CBFFFE8011AB"
+            },
+            "time": "2026-03-02T15:35:09.208463907Z",
+            "timestamp": 2117453388,
+            "rssi": -51,
+            "channel_rssi": -51,
+            "snr": 9.75,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQzIzX8QcaDAit3JbNBhCn+ICFASDgsbqQ0LcC",
+            "received_at": "2026-03-02T15:35:09.238558744Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-06",
+              "eui": "58A0CBFFFE80128C"
+            },
+            "time": "2026-03-02T15:35:09.212774038Z",
+            "timestamp": 2138999060,
+            "rssi": -48,
+            "channel_rssi": -48,
+            "snr": 9.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQlJL6+wcaDAit3JbNBhCZy6yIASCg7J2yoLgC",
+            "received_at": "2026-03-02T15:35:09.228644927Z"
+          }
+        ],
+        "settings": {
+          "data_rate": {
+            "lora": {
+              "bandwidth": 125000,
+              "spreading_factor": 7,
+              "coding_rate": "4/5"
+            }
+          },
+          "frequency": "867900000",
+          "timestamp": 2100933660,
+          "time": "2026-03-02T15:35:09.205209970Z"
+        },
+        "received_at": "2026-03-02T15:35:09.274188619Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+          "net_id": "000013",
+          "ns_id": "EC656E0000000181",
+          "tenant_id": "ttn",
+          "cluster_id": "eu1",
+          "cluster_address": "eu1.cloud.thethings.network"
+        }
+      }
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK0R6R2A79ESYYJ2R52SB5"
+    ],
+    "origin": "ip-10-100-5-255.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK0RDF1MNH7HM8XRDX9CDN"
+  },
+  {
+    "name": "ns.up.data.process",
+    "time": "2026-03-02T15:35:09.483189539Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.UplinkMessage",
+      "raw_payload": "QH2HCyaAJQABm9ylnOUuPzXYGXxa5CGAdYSq",
+      "payload": {
+        "m_hdr": {
+          "m_type": "UNCONFIRMED_UP"
+        },
+        "mic": "gHWEqg==",
+        "mac_payload": {
+          "f_hdr": {
+            "dev_addr": "260B877D",
+            "f_ctrl": {
+              "adr": true
+            },
+            "f_cnt": 37
+          },
+          "f_port": 1,
+          "frm_payload": "m9ylnOUuPzXYGXxa5CE=",
+          "full_f_cnt": 37
+        }
+      },
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 7,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867900000",
+        "timestamp": 2100933660,
+        "time": "2026-03-02T15:35:09.205209970Z"
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-13",
+            "eui": "58A0CBFFFE800D93"
+          },
+          "time": "2026-03-02T15:35:09.205209970Z",
+          "timestamp": 2100933660,
+          "rssi": -51,
+          "channel_rssi": -51,
+          "snr": 9,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQnOjm6QcaDAit3JbNBhCaqeuBASDgmp7LkrcC",
+          "received_at": "2026-03-02T15:35:09.247210503Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-07",
+            "eui": "58A0CBFFFE80131E"
+          },
+          "time": "2026-03-02T15:35:09.212063074Z",
+          "timestamp": 2128976060,
+          "rssi": -57,
+          "channel_rssi": -57,
+          "snr": 9.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QvLGW9wcaDAit3JbNBhCgtceEASDgvPKG+7cC",
+          "received_at": "2026-03-02T15:35:09.227608504Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-05",
+            "eui": "58A0CBFFFE801373"
+          },
+          "time": "2026-03-02T15:35:09.212995052Z",
+          "timestamp": 2164900044,
+          "rssi": -49,
+          "channel_rssi": -49,
+          "snr": 10.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQzIGniAgaDAit3JbNBhC0xuKEASDgueTwgLkC",
+          "received_at": "2026-03-02T15:35:09.241880025Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-11",
+            "eui": "58A0CBFFFE8011AB"
+          },
+          "time": "2026-03-02T15:35:09.208463907Z",
+          "timestamp": 2117453388,
+          "rssi": -51,
+          "channel_rssi": -51,
+          "snr": 9.75,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQzIzX8QcaDAit3JbNBhCn+ICFASDgsbqQ0LcC",
+          "received_at": "2026-03-02T15:35:09.238558744Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-06",
+            "eui": "58A0CBFFFE80128C"
+          },
+          "time": "2026-03-02T15:35:09.212774038Z",
+          "timestamp": 2138999060,
+          "rssi": -48,
+          "channel_rssi": -48,
+          "snr": 9.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQlJL6+wcaDAit3JbNBhCZy6yIASCg7J2yoLgC",
+          "received_at": "2026-03-02T15:35:09.228644927Z"
+        }
+      ],
+      "received_at": "2026-03-02T15:35:09.274188619Z",
+      "correlation_ids": [
+        "gs:uplink:01KJQK0R6R2A79ESYYJ2R52SB5"
+      ],
+      "device_channel_index": 7,
+      "consumed_airtime": "0.066816s"
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK0R6R2A79ESYYJ2R52SB5"
+    ],
+    "origin": "ip-10-100-4-57.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK0RDBGAF1Y049BR11FW7M"
+  },
+  {
+    "name": "as.up.data.forward",
+    "time": "2026-03-02T15:34:59.484977629Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+      "end_device_ids": {
+        "device_id": "2303-002-0010",
+        "application_ids": {
+          "application_id": "dust-sensor-depth-experiment"
+        },
+        "dev_eui": "E2A75D16AADFFBD0",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B877D"
+      },
+      "correlation_ids": [
+        "gs:uplink:01KJQK0EE64NZHPB2R4K1RG6CQ"
+      ],
+      "received_at": "2026-03-02T15:34:59.480539017Z",
+      "uplink_message": {
+        "session_key_id": "AZyvKpenk/z4b6k+fpsmyw==",
+        "f_port": 1,
+        "f_cnt": 36,
+        "frm_payload": "sxYAAAAAAAAAAAAA4wg=",
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-07",
+              "eui": "58A0CBFFFE80131E"
+            },
+            "time": "2026-03-02T15:34:59.207586050Z",
+            "timestamp": 2118976900,
+            "rssi": -57,
+            "channel_rssi": -57,
+            "snr": 7.75,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QhIu08gcaDAij3JbNBhCakteAASCgl/bm1bcC",
+            "received_at": "2026-03-02T15:34:59.219435397Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-11",
+              "eui": "58A0CBFFFE8011AB"
+            },
+            "time": "2026-03-02T15:34:59.203155040Z",
+            "timestamp": 2107454228,
+            "rssi": -48,
+            "channel_rssi": -48,
+            "snr": 8,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQlOb07AcaDAij3JbNBhDOkvaAASCgjL7wqrcC",
+            "received_at": "2026-03-02T15:34:59.230047127Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-13",
+              "eui": "58A0CBFFFE800D93"
+            },
+            "time": "2026-03-02T15:34:59.200961112Z",
+            "timestamp": 2090934500,
+            "rssi": -51,
+            "channel_rssi": -51,
+            "snr": 8,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ5MGE5QcaDAij3JbNBhCnk86EASCg9aGr7bYC",
+            "received_at": "2026-03-02T15:34:59.252918907Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-06",
+              "eui": "58A0CBFFFE80128C"
+            },
+            "time": "2026-03-02T15:34:59.205199003Z",
+            "timestamp": 2128999900,
+            "rssi": -46,
+            "channel_rssi": -46,
+            "snr": 8,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ3OuX9wcaDAij3JbNBhCjiIuFASDgxqGS+7cC",
+            "received_at": "2026-03-02T15:34:59.222210047Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-05",
+              "eui": "58A0CBFFFE801373"
+            },
+            "time": "2026-03-02T15:34:59.215807914Z",
+            "timestamp": 2154900876,
+            "rssi": -45,
+            "channel_rssi": -45,
+            "snr": 7.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQjNvEgwgaDAij3JbNBhDU5sCIASDg1efQ27gC",
+            "received_at": "2026-03-02T15:34:59.248769869Z"
+          }
+        ],
+        "settings": {
+          "data_rate": {
+            "lora": {
+              "bandwidth": 125000,
+              "spreading_factor": 7,
+              "coding_rate": "4/5"
+            }
+          },
+          "frequency": "867500000",
+          "timestamp": 2118976900,
+          "time": "2026-03-02T15:34:59.207586050Z"
+        },
+        "received_at": "2026-03-02T15:34:59.271039745Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+          "net_id": "000013",
+          "ns_id": "EC656E0000000181",
+          "tenant_id": "ttn",
+          "cluster_id": "eu1",
+          "cluster_address": "eu1.cloud.thethings.network"
+        }
+      }
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK0EE64NZHPB2R4K1RG6CQ"
+    ],
+    "origin": "ip-10-100-5-255.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK0EMW8Z1N912A2CPZ5S5D"
+  },
+  {
+    "name": "ns.up.data.process",
+    "time": "2026-03-02T15:34:59.479851711Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.UplinkMessage",
+      "raw_payload": "QH2HCyaAJAABfFuwc9aQRVC+kL4oQYTmFoIS",
+      "payload": {
+        "m_hdr": {
+          "m_type": "UNCONFIRMED_UP"
+        },
+        "mic": "5haCEg==",
+        "mac_payload": {
+          "f_hdr": {
+            "dev_addr": "260B877D",
+            "f_ctrl": {
+              "adr": true
+            },
+            "f_cnt": 36
+          },
+          "f_port": 1,
+          "frm_payload": "fFuwc9aQRVC+kL4oQYQ=",
+          "full_f_cnt": 36
+        }
+      },
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 7,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867500000",
+        "timestamp": 2118976900,
+        "time": "2026-03-02T15:34:59.207586050Z"
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-07",
+            "eui": "58A0CBFFFE80131E"
+          },
+          "time": "2026-03-02T15:34:59.207586050Z",
+          "timestamp": 2118976900,
+          "rssi": -57,
+          "channel_rssi": -57,
+          "snr": 7.75,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QhIu08gcaDAij3JbNBhCakteAASCgl/bm1bcC",
+          "received_at": "2026-03-02T15:34:59.219435397Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-11",
+            "eui": "58A0CBFFFE8011AB"
+          },
+          "time": "2026-03-02T15:34:59.203155040Z",
+          "timestamp": 2107454228,
+          "rssi": -48,
+          "channel_rssi": -48,
+          "snr": 8,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQlOb07AcaDAij3JbNBhDOkvaAASCgjL7wqrcC",
+          "received_at": "2026-03-02T15:34:59.230047127Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-13",
+            "eui": "58A0CBFFFE800D93"
+          },
+          "time": "2026-03-02T15:34:59.200961112Z",
+          "timestamp": 2090934500,
+          "rssi": -51,
+          "channel_rssi": -51,
+          "snr": 8,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ5MGE5QcaDAij3JbNBhCnk86EASCg9aGr7bYC",
+          "received_at": "2026-03-02T15:34:59.252918907Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-06",
+            "eui": "58A0CBFFFE80128C"
+          },
+          "time": "2026-03-02T15:34:59.205199003Z",
+          "timestamp": 2128999900,
+          "rssi": -46,
+          "channel_rssi": -46,
+          "snr": 8,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ3OuX9wcaDAij3JbNBhCjiIuFASDgxqGS+7cC",
+          "received_at": "2026-03-02T15:34:59.222210047Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-05",
+            "eui": "58A0CBFFFE801373"
+          },
+          "time": "2026-03-02T15:34:59.215807914Z",
+          "timestamp": 2154900876,
+          "rssi": -45,
+          "channel_rssi": -45,
+          "snr": 7.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQjNvEgwgaDAij3JbNBhDU5sCIASDg1efQ27gC",
+          "received_at": "2026-03-02T15:34:59.248769869Z"
+        }
+      ],
+      "received_at": "2026-03-02T15:34:59.271039745Z",
+      "correlation_ids": [
+        "gs:uplink:01KJQK0EE64NZHPB2R4K1RG6CQ"
+      ],
+      "device_channel_index": 5,
+      "consumed_airtime": "0.066816s"
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK0EE64NZHPB2R4K1RG6CQ"
+    ],
+    "origin": "ip-10-100-4-57.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK0EMQDRP7W9BVKJ93ZRMB"
+  },
+  {
+    "name": "as.up.data.forward",
+    "time": "2026-03-02T15:34:49.488100821Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+      "end_device_ids": {
+        "device_id": "2303-002-0010",
+        "application_ids": {
+          "application_id": "dust-sensor-depth-experiment"
+        },
+        "dev_eui": "E2A75D16AADFFBD0",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B877D"
+      },
+      "correlation_ids": [
+        "gs:uplink:01KJQK04NW8V10GRTRJE54NSX7"
+      ],
+      "received_at": "2026-03-02T15:34:49.486487122Z",
+      "uplink_message": {
+        "session_key_id": "AZyvKpenk/z4b6k+fpsmyw==",
+        "f_port": 1,
+        "f_cnt": 35,
+        "frm_payload": "sxYAAAAAAAAAAAAA6Qg=",
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-11",
+              "eui": "58A0CBFFFE8011AB"
+            },
+            "time": "2026-03-02T15:34:49.206484079Z",
+            "timestamp": 2097455068,
+            "rssi": -48,
+            "channel_rssi": -48,
+            "snr": 9.75,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQ3L+S6AcaDAiZ3JbNBhDVyL+DASDg5sHQhbcC",
+            "received_at": "2026-03-02T15:34:49.235550206Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-06",
+              "eui": "58A0CBFFFE80128C"
+            },
+            "time": "2026-03-02T15:34:49.206548929Z",
+            "timestamp": 2119000732,
+            "rssi": -46,
+            "channel_rssi": -46,
+            "snr": 10.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQnMW18gcaDAiZ3JbNBhC76tGEASDg4qTy1bcC",
+            "received_at": "2026-03-02T15:34:49.221508129Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-05",
+              "eui": "58A0CBFFFE801373"
+            },
+            "time": "2026-03-02T15:34:49.212601900Z",
+            "timestamp": 2144901700,
+            "rssi": -48,
+            "channel_rssi": -48,
+            "snr": 9,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQxLTi/gcaDAiZ3JbNBhCfp++EASCgs+qwtrgC",
+            "received_at": "2026-03-02T15:34:49.120823515Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-07",
+              "eui": "58A0CBFFFE80131E"
+            },
+            "time": "2026-03-02T15:34:49.212737083Z",
+            "timestamp": 2108977724,
+            "rssi": -55,
+            "channel_rssi": -55,
+            "snr": 10.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QvOTR7QcaDAiZ3JbNBhCZ2eCGASDg9PjGsLcC",
+            "received_at": "2026-03-02T15:34:49.232148329Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-13",
+              "eui": "58A0CBFFFE800D93"
+            },
+            "time": "2026-03-02T15:34:49.215292930Z",
+            "timestamp": 2080935332,
+            "rssi": -53,
+            "channel_rssi": -53,
+            "snr": 11,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQpJui4AcaDAiZ3JbNBhC+lpeHASCgkaWLyLYC",
+            "received_at": "2026-03-02T15:34:49.258198761Z"
+          }
+        ],
+        "settings": {
+          "data_rate": {
+            "lora": {
+              "bandwidth": 125000,
+              "spreading_factor": 7,
+              "coding_rate": "4/5"
+            }
+          },
+          "frequency": "867700000",
+          "timestamp": 2097455068,
+          "time": "2026-03-02T15:34:49.206484079Z"
+        },
+        "received_at": "2026-03-02T15:34:49.276645346Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+          "net_id": "000013",
+          "ns_id": "EC656E0000000181",
+          "tenant_id": "ttn",
+          "cluster_id": "eu1",
+          "cluster_address": "eu1.cloud.thethings.network"
+        }
+      }
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK04NW8V10GRTRJE54NSX7"
+    ],
+    "origin": "ip-10-100-14-150.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK04WGK97GJE34H6YQ5X64"
+  },
+  {
+    "name": "ns.up.data.process",
+    "time": "2026-03-02T15:34:49.485679578Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.UplinkMessage",
+      "raw_payload": "QH2HCyaAIwABpXRokA/JQDTwO+HG2gQGDB4w",
+      "payload": {
+        "m_hdr": {
+          "m_type": "UNCONFIRMED_UP"
+        },
+        "mic": "BgweMA==",
+        "mac_payload": {
+          "f_hdr": {
+            "dev_addr": "260B877D",
+            "f_ctrl": {
+              "adr": true
+            },
+            "f_cnt": 35
+          },
+          "f_port": 1,
+          "frm_payload": "pXRokA/JQDTwO+HG2gQ=",
+          "full_f_cnt": 35
+        }
+      },
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 7,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867700000",
+        "timestamp": 2097455068,
+        "time": "2026-03-02T15:34:49.206484079Z"
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-11",
+            "eui": "58A0CBFFFE8011AB"
+          },
+          "time": "2026-03-02T15:34:49.206484079Z",
+          "timestamp": 2097455068,
+          "rssi": -48,
+          "channel_rssi": -48,
+          "snr": 9.75,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQ3L+S6AcaDAiZ3JbNBhDVyL+DASDg5sHQhbcC",
+          "received_at": "2026-03-02T15:34:49.235550206Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-06",
+            "eui": "58A0CBFFFE80128C"
+          },
+          "time": "2026-03-02T15:34:49.206548929Z",
+          "timestamp": 2119000732,
+          "rssi": -46,
+          "channel_rssi": -46,
+          "snr": 10.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQnMW18gcaDAiZ3JbNBhC76tGEASDg4qTy1bcC",
+          "received_at": "2026-03-02T15:34:49.221508129Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-05",
+            "eui": "58A0CBFFFE801373"
+          },
+          "time": "2026-03-02T15:34:49.212601900Z",
+          "timestamp": 2144901700,
+          "rssi": -48,
+          "channel_rssi": -48,
+          "snr": 9,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQxLTi/gcaDAiZ3JbNBhCfp++EASCgs+qwtrgC",
+          "received_at": "2026-03-02T15:34:49.120823515Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-07",
+            "eui": "58A0CBFFFE80131E"
+          },
+          "time": "2026-03-02T15:34:49.212737083Z",
+          "timestamp": 2108977724,
+          "rssi": -55,
+          "channel_rssi": -55,
+          "snr": 10.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4QvOTR7QcaDAiZ3JbNBhCZ2eCGASDg9PjGsLcC",
+          "received_at": "2026-03-02T15:34:49.232148329Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-13",
+            "eui": "58A0CBFFFE800D93"
+          },
+          "time": "2026-03-02T15:34:49.215292930Z",
+          "timestamp": 2080935332,
+          "rssi": -53,
+          "channel_rssi": -53,
+          "snr": 11,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQpJui4AcaDAiZ3JbNBhC+lpeHASCgkaWLyLYC",
+          "received_at": "2026-03-02T15:34:49.258198761Z"
+        }
+      ],
+      "received_at": "2026-03-02T15:34:49.276645346Z",
+      "correlation_ids": [
+        "gs:uplink:01KJQK04NW8V10GRTRJE54NSX7"
+      ],
+      "device_channel_index": 6,
+      "consumed_airtime": "0.066816s"
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQK04NW8V10GRTRJE54NSX7"
+    ],
+    "origin": "ip-10-100-4-57.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQK04WDZ1F7XWYMH8RNB1NZ"
+  },
+  {
+    "name": "as.up.data.forward",
+    "time": "2026-03-02T15:34:39.482441952Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+      "end_device_ids": {
+        "device_id": "2303-002-0010",
+        "application_ids": {
+          "application_id": "dust-sensor-depth-experiment"
+        },
+        "dev_eui": "E2A75D16AADFFBD0",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B877D"
+      },
+      "correlation_ids": [
+        "gs:uplink:01KJQJZTX6KM8R561HBRN17QE6"
+      ],
+      "received_at": "2026-03-02T15:34:39.478519518Z",
+      "uplink_message": {
+        "session_key_id": "AZyvKpenk/z4b6k+fpsmyw==",
+        "f_port": 1,
+        "f_cnt": 34,
+        "frm_payload": "sxYAAAAAAAAAAAAA6Qg=",
+        "rx_metadata": [
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-05",
+              "eui": "58A0CBFFFE801373"
+            },
+            "time": "2026-03-02T15:34:39.204623937Z",
+            "timestamp": 2134902524,
+            "rssi": -49,
+            "channel_rssi": -49,
+            "snr": 9.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQ/I2A+gcaDAiP3JbNBhCj6uqAASDgkO2QkbgC",
+            "received_at": "2026-03-02T15:34:39.005307846Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-06",
+              "eui": "58A0CBFFFE80128C"
+            },
+            "time": "2026-03-02T15:34:39.200850009Z",
+            "timestamp": 2109001556,
+            "rssi": -45,
+            "channel_rssi": -45,
+            "snr": 9.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ1J7T7QcaDAiP3JbNBhDR8NeBASCgwKfSsLcC",
+            "received_at": "2026-03-02T15:34:39.216143865Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-13",
+              "eui": "58A0CBFFFE800D93"
+            },
+            "time": "2026-03-02T15:34:39.209769964Z",
+            "timestamp": 2070936164,
+            "rssi": -52,
+            "channel_rssi": -52,
+            "snr": 10.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ5PS/2wcaDAiP3JbNBhCOt9SEASCgrajrorYC",
+            "received_at": "2026-03-02T15:34:39.252910905Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-07",
+              "eui": "58A0CBFFFE80131E"
+            },
+            "time": "2026-03-02T15:34:39.211183071Z",
+            "timestamp": 2098978556,
+            "rssi": -58,
+            "channel_rssi": -58,
+            "snr": 10.25,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4Q/L3v6AcaDAiP3JbNBhDkssKFASDgkPymi7cC",
+            "received_at": "2026-03-02T15:34:39.229374006Z"
+          },
+          {
+            "gateway_ids": {
+              "gateway_id": "ttn-vives-indoor-11",
+              "eui": "58A0CBFFFE8011AB"
+            },
+            "time": "2026-03-02T15:34:39.207726955Z",
+            "timestamp": 2087455900,
+            "rssi": -51,
+            "channel_rssi": -51,
+            "snr": 10.5,
+            "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQnJmw4wcaDAiP3JbNBhDqqtqFASDggsWw4LYC",
+            "received_at": "2026-03-02T15:34:39.240445369Z"
+          }
+        ],
+        "settings": {
+          "data_rate": {
+            "lora": {
+              "bandwidth": 125000,
+              "spreading_factor": 7,
+              "coding_rate": "4/5"
+            }
+          },
+          "frequency": "867900000",
+          "timestamp": 2134902524,
+          "time": "2026-03-02T15:34:39.204623937Z"
+        },
+        "received_at": "2026-03-02T15:34:39.271233511Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+          "net_id": "000013",
+          "ns_id": "EC656E0000000181",
+          "tenant_id": "ttn",
+          "cluster_id": "eu1",
+          "cluster_address": "eu1.cloud.thethings.network"
+        }
+      }
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQJZTX6KM8R561HBRN17QE6"
+    ],
+    "origin": "ip-10-100-14-150.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQJZV3TA29QTTGZZTAFQ74G"
+  },
+  {
+    "name": "ns.up.data.process",
+    "time": "2026-03-02T15:34:39.477933907Z",
+    "identifiers": [
+      {
+        "device_ids": {
+          "device_id": "2303-002-0010",
+          "application_ids": {
+            "application_id": "dust-sensor-depth-experiment"
+          },
+          "dev_eui": "E2A75D16AADFFBD0",
+          "join_eui": "0000000000000000",
+          "dev_addr": "260B877D"
+        }
+      }
+    ],
+    "data": {
+      "@type": "type.googleapis.com/ttn.lorawan.v3.UplinkMessage",
+      "raw_payload": "QH2HCyaAIgABH51Xe6dlufM8UDc41SguP1Kt",
+      "payload": {
+        "m_hdr": {
+          "m_type": "UNCONFIRMED_UP"
+        },
+        "mic": "Lj9SrQ==",
+        "mac_payload": {
+          "f_hdr": {
+            "dev_addr": "260B877D",
+            "f_ctrl": {
+              "adr": true
+            },
+            "f_cnt": 34
+          },
+          "f_port": 1,
+          "frm_payload": "H51Xe6dlufM8UDc41Sg=",
+          "full_f_cnt": 34
+        }
+      },
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 7,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867900000",
+        "timestamp": 2134902524,
+        "time": "2026-03-02T15:34:39.204623937Z"
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-05",
+            "eui": "58A0CBFFFE801373"
+          },
+          "time": "2026-03-02T15:34:39.204623937Z",
+          "timestamp": 2134902524,
+          "rssi": -49,
+          "channel_rssi": -49,
+          "snr": 9.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNRIIWKDL//6AE3MQ/I2A+gcaDAiP3JbNBhCj6uqAASDgkO2QkbgC",
+          "received_at": "2026-03-02T15:34:39.005307846Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-06",
+            "eui": "58A0CBFFFE80128C"
+          },
+          "time": "2026-03-02T15:34:39.200850009Z",
+          "timestamp": 2109001556,
+          "rssi": -45,
+          "channel_rssi": -45,
+          "snr": 9.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNhIIWKDL//6AEowQ1J7T7QcaDAiP3JbNBhDR8NeBASCgwKfSsLcC",
+          "received_at": "2026-03-02T15:34:39.216143865Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-13",
+            "eui": "58A0CBFFFE800D93"
+          },
+          "time": "2026-03-02T15:34:39.209769964Z",
+          "timestamp": 2070936164,
+          "rssi": -52,
+          "channel_rssi": -52,
+          "snr": 10.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMxIIWKDL//6ADZMQ5PS/2wcaDAiP3JbNBhCOt9SEASCgrajrorYC",
+          "received_at": "2026-03-02T15:34:39.252910905Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-07",
+            "eui": "58A0CBFFFE80131E"
+          },
+          "time": "2026-03-02T15:34:39.211183071Z",
+          "timestamp": 2098978556,
+          "rssi": -58,
+          "channel_rssi": -58,
+          "snr": 10.25,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0wNxIIWKDL//6AEx4Q/L3v6AcaDAiP3JbNBhDkssKFASDgkPymi7cC",
+          "received_at": "2026-03-02T15:34:39.229374006Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "ttn-vives-indoor-11",
+            "eui": "58A0CBFFFE8011AB"
+          },
+          "time": "2026-03-02T15:34:39.207726955Z",
+          "timestamp": 2087455900,
+          "rssi": -51,
+          "channel_rssi": -51,
+          "snr": 10.5,
+          "uplink_token": "CiEKHwoTdHRuLXZpdmVzLWluZG9vci0xMRIIWKDL//6AEasQnJmw4wcaDAiP3JbNBhDqqtqFASDggsWw4LYC",
+          "received_at": "2026-03-02T15:34:39.240445369Z"
+        }
+      ],
+      "received_at": "2026-03-02T15:34:39.271233511Z",
+      "correlation_ids": [
+        "gs:uplink:01KJQJZTX6KM8R561HBRN17QE6"
+      ],
+      "device_channel_index": 7,
+      "consumed_airtime": "0.066816s"
+    },
+    "correlation_ids": [
+      "gs:uplink:01KJQJZTX6KM8R561HBRN17QE6"
+    ],
+    "origin": "ip-10-100-4-57.eu-west-1.compute.internal",
+    "context": {
+      "tenant-id": "CgN0dG4="
+    },
+    "visibility": {
+      "rights": [
+        "RIGHT_APPLICATION_TRAFFIC_READ"
+      ]
+    },
+    "unique_id": "01KJQJZV3NNXTTB23ZFNSPGRM5"
+  },
+  {
+    "time": "2026-03-02T15:34:33.954Z",
+    "name": "synthetic.status.cleared",
+    "isError": false,
+    "isSynthetic": true,
+    "unique_id": "synthetic.1772465673954"
+  }
+]
