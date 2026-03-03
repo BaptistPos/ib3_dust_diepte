@@ -3,7 +3,7 @@
 In dit project ga ik experimenteren hoe het signaal van de DUST-sensor wordt aangepast, naargelang hoe die de sensor onder de grond zit.
 
 ### Testopstelling - HUIS
-Nog niet getest als de sensor in een medium zit (onder de grond)
+Nog niet getest als de sensor in een medium zit (onder de grond): ```data_huis_computer.json```, ```data_huis_midden.json```, ```data_huis_trap.json```
 
 #### Gateways:
 - ttn-vives-indoor-06: keuken
@@ -18,7 +18,7 @@ Nog niet getest als de sensor in een medium zit (onder de grond)
 - 2407-003-0078: midden
 
 ### Testopstelling - GARAGE
-Nog niet getest als de sensor in een medium zit (onder de grond)
+Nog niet getest als de sensor in een medium zit (onder de grond): ``````data_garage.json``````
 
 #### Gateways:
 - ttn-vives-indoor-06: internet
