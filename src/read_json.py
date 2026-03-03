@@ -3,7 +3,7 @@ import json
 with open('data/data_garage.json', 'r') as file:
     raw_data = json.load(file)
 
-for i in range(len(raw_data) - 1):
+for i in range(len(raw_data) - 1): # laatste data onderdeel niet van belang
     if (raw_data[i]["name"] == "as.up.data.forward"):
         print(f"Sensor ({json.dumps(raw_data[i]["data"]["uplink_message"]["f_cnt"])}, {json.dumps(raw_data[i]["data"]["uplink_message"]["consumed_airtime"])}): {json.dumps(raw_data[i]["data"]["end_device_ids"]["device_id"])})")
         for j in range(len(raw_data[i]["data"]["uplink_message"]["rx_metadata"])):
