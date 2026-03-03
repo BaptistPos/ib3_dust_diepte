@@ -1,6 +1,6 @@
 import json
 
-with open('data/data_huis_trap.json', 'r') as file:
+with open('data/data_garage.json', 'r') as file:
     raw_data = json.load(file)
 
 for i in range(len(raw_data) - 1):
@@ -12,6 +12,3 @@ for i in range(len(raw_data) - 1):
             print("\t\tSNR: " + json.dumps(raw_data[i]["data"]["uplink_message"]["rx_metadata"][j]["snr"]))
             print("\t\tReceived: " + json.dumps(raw_data[i]["data"]["uplink_message"]["rx_metadata"][j]["received_at"]))
         print("\n")
-
-
-

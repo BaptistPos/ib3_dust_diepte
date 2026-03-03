@@ -16,3 +16,16 @@ Nog niet getest als de sensor in een medium zit (onder de grond)
 - 2211-001-0003: computer
 - 2303-002-0010: trap
 - 2407-003-0078: midden
+
+### Testopstelling - GARAGE
+Nog niet getest als de sensor in een medium zit (onder de grond)
+
+#### Gateways:
+- ttn-vives-indoor-06: internet
+- ttn-vives-indoor-11: waskot deur
+- ttn-vives-indoor-07: kraantje
+- ttn-vives-indoor-05: kelder deur
+- ttn-vives-indoor-13: keuken
+
+#### Sensoren:
+- 2211-001-0003: midden
