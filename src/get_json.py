@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import matplotlib.pyplot as plt
 
 AG2AG_PATH = "data/data_garage.json"
 UG2AG_PATH = "data/data_huis_midden.json"
@@ -46,9 +47,33 @@ def get_json(path):
     return df_sensor, df_data
 
 AG2AG_SENSOR, AG2AG_DATA = get_json(AG2AG_PATH)
-# print(AG2AG_DATA)
-# print(AG2AG_SENSOR)
-
 UG2AG_SENSOR, UG2AG_DATA = get_json(UG2AG_PATH)
-# print(UG2AG_DATA)
-# print(UG2AG_SENSOR)
+
+def sensor_rssi_snr(df_data):
+    sensor_rssi = {}
+    sensor_snr = {}
+    
+    for i in range(len(df_data.loc[0])):
+        sensor_rssi[df_data.loc[0].index[i]] = int(df_data.loc[0]["RSSI"][i])  
+        sensor_snr[df_data.loc[0].index[i]] = int(df_data.loc[0]["SNR"][i])
+    
+    sensor_rssi = dict(sorted(sensor_rssi.items(), key=lambda item: item[0]))
+    sensor_snr = dict(sorted(sensor_snr.items(), key=lambda item: item[0]))    
+    
+    return sensor_rssi, sensor_snr
+
+AG2AG_SENSOR_RSSI, AG2AG_SENSOR_SNR = sensor_rssi_snr(AG2AG_DATA)
+UG2AG_SENSOR_RSSI, UG2AG_SENSOR_SNR = sensor_rssi_snr(UG2AG_DATA)
+
+plt.plot(AG2AG_SENSOR_RSSI.keys(), AG2AG_SENSOR_RSSI.values(), color='r')
+plt.plot(UG2AG_SENSOR_RSSI.keys(), UG2AG_SENSOR_RSSI.values(), color='b')
+plt.xlabel("Sensor")
+plt.ylabel("RSSI")
+plt.title("AG2AG (rood) vs UG2AG (blauw)")
+plt.show()
+plt.plot(AG2AG_SENSOR_SNR.keys(), AG2AG_SENSOR_SNR.values(), color='r')
+plt.plot(UG2AG_SENSOR_SNR.keys(), UG2AG_SENSOR_SNR.values(), color='b')
+plt.xlabel("Sensor")
+plt.ylabel("SNR")
+plt.title("AG2AG (rood) vs UG2AG (blauw)")
+plt.show()
