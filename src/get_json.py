@@ -1,9 +1,10 @@
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-AG2AG_PATH = "data/data_garage.json"
-UG2AG_PATH = "data/data_huis_midden.json"
+AG2AG_PATH = "ib3_dust_diepte\data\data_garage.json"
+UG2AG_PATH = "ib3_dust_diepte\data\data_huis_midden.json"
 
 def get_json(path):
     s_id, s_cnt, s_sensor, s_airtime, s_bw, s_sf = [], [], [], [], [], []
@@ -46,9 +47,6 @@ def get_json(path):
     
     return df_sensor, df_data
 
-AG2AG_SENSOR, AG2AG_DATA = get_json(AG2AG_PATH)
-UG2AG_SENSOR, UG2AG_DATA = get_json(UG2AG_PATH)
-
 def sensor_rssi_snr(df_data):
     sensor_rssi = {}
     sensor_snr = {}
@@ -62,18 +60,25 @@ def sensor_rssi_snr(df_data):
     
     return sensor_rssi, sensor_snr
 
+AG2AG_SENSOR, AG2AG_DATA = get_json(AG2AG_PATH)
+UG2AG_SENSOR, UG2AG_DATA = get_json(UG2AG_PATH)
+
 AG2AG_SENSOR_RSSI, AG2AG_SENSOR_SNR = sensor_rssi_snr(AG2AG_DATA)
 UG2AG_SENSOR_RSSI, UG2AG_SENSOR_SNR = sensor_rssi_snr(UG2AG_DATA)
 
-plt.plot(AG2AG_SENSOR_RSSI.keys(), AG2AG_SENSOR_RSSI.values(), color='r')
-plt.plot(UG2AG_SENSOR_RSSI.keys(), UG2AG_SENSOR_RSSI.values(), color='b')
-plt.xlabel("Sensor")
-plt.ylabel("RSSI")
-plt.title("AG2AG (rood) vs UG2AG (blauw)")
-plt.show()
-plt.plot(AG2AG_SENSOR_SNR.keys(), AG2AG_SENSOR_SNR.values(), color='r')
-plt.plot(UG2AG_SENSOR_SNR.keys(), UG2AG_SENSOR_SNR.values(), color='b')
-plt.xlabel("Sensor")
-plt.ylabel("SNR")
-plt.title("AG2AG (rood) vs UG2AG (blauw)")
+print(AG2AG_SENSOR)
+print(AG2AG_DATA)
+
+df_gateways = AG2AG_DATA.reset_index()
+df_gateways.columns = ['CNT', 'GATEWAY', 'RSSI', 'SNR']
+plt.figure(figsize=(12, 6))
+sns.lineplot(data=df_gateways, x='CNT', y='RSSI', hue='GATEWAY', marker='o')
+
+plt.title('RSSI waarden per Pakket (CNT) per Gateway', fontsize=14)
+plt.xlabel('Pakket Nummer (CNT)', fontsize=12)
+plt.ylabel('RSSI (dBm)', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.legend(title='Gateways', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+plt.tight_layout()
 plt.show()
