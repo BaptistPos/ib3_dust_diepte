@@ -66,19 +66,22 @@ UG2AG_SENSOR, UG2AG_DATA = get_json(UG2AG_PATH)
 AG2AG_SENSOR_RSSI, AG2AG_SENSOR_SNR = sensor_rssi_snr(AG2AG_DATA)
 UG2AG_SENSOR_RSSI, UG2AG_SENSOR_SNR = sensor_rssi_snr(UG2AG_DATA)
 
-print(AG2AG_SENSOR)
-print(AG2AG_DATA)
+print(UG2AG_DATA)
 
-df_gateways = AG2AG_DATA.reset_index()
-df_gateways.columns = ['CNT', 'GATEWAY', 'RSSI', 'SNR']
-plt.figure(figsize=(12, 6))
-sns.lineplot(data=df_gateways, x='CNT', y='RSSI', hue='GATEWAY', marker='o')
+target_gateway = ['ttn-vives-indoor-05', 'ttn-vives-indoor-06', 'ttn-vives-indoor-07', 'ttn-vives-indoor-11', 'ttn-vives-indoor-13']
 
-plt.title('RSSI waarden per Pakket (CNT) per Gateway', fontsize=14)
-plt.xlabel('Pakket Nummer (CNT)', fontsize=12)
-plt.ylabel('RSSI (dBm)', fontsize=12)
-plt.grid(True, linestyle='--', alpha=0.7)
-plt.legend(title='Gateways', bbox_to_anchor=(1.05, 1), loc='upper left')
+for gateway in target_gateway:
+    AG2AG_df_filtered = AG2AG_DATA.xs(gateway, level=1)
+    UG2AG_df_filtered = UG2AG_DATA.xs(gateway, level=1)
+    
+    plt.figure(gateway)
+    plt.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='b')
+    plt.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='b')
+    plt.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='r')
+    plt.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='r')
+    plt.title(f'AG2AG (blauw) vs UG2AG (rood): {gateway}')
+    plt.xlabel('Pakket')
+    plt.ylabel('RSSI (-) / SNR (--)')
+    plt.grid(True, linestyle='--', alpha=0.7)
 
-plt.tight_layout()
 plt.show()
