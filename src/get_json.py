@@ -68,8 +68,6 @@ UG2AG_SENSOR_RSSI, UG2AG_SENSOR_SNR = sensor_rssi_snr(UG2AG_DATA)
 
 target_gateway = ['ttn-vives-indoor-05', 'ttn-vives-indoor-06', 'ttn-vives-indoor-07', 'ttn-vives-indoor-11', 'ttn-vives-indoor-13']
 
-print(UG2AG_SENSOR)
-
 for gateway in target_gateway:
     AG2AG_df_filtered = AG2AG_DATA.xs(gateway, level=1)
     UG2AG_df_filtered = UG2AG_DATA.xs(gateway, level=1)
@@ -79,15 +77,29 @@ for gateway in target_gateway:
     plt.grid(True, linestyle='--', alpha=0.7)
     
     ax1.set_xlabel('# Pakket')
-    ax1.set_ylabel('RSSI (---)')
+    ax1.set_ylabel('RSSI (---) [dBm]')
     ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='b') # AG2AG_SENSOR['CNT']
     ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='r') # UG2AG_SENSOR['CNT']
     
     ax1.set_xlabel('Index')
     ax2 = ax1.twinx()
     ax2.set_yticklabels([])
-    ax2.set_ylabel('SNR (- - -)')
+    ax2.set_ylabel('SNR (- - -) [dB]')
     ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='b') # AG2AG_SENSOR['CNT']
     ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='r') # UG2AG_SENSOR['CNT']
+
+plt.figure('Packet Count')
+plt.title('AG2AG (blauw) vs UG2AG (rood): Packet Count')
+plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['CNT'], marker='o', linestyle='-', color='b')
+plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['CNT'], marker='o', linestyle='-', color='r')
+plt.xlabel("Index")
+plt.ylabel("Packet")
+
+plt.figure('Airtime')
+plt.title('AG2AG (blauw) vs UG2AG (rood): Airtime')
+plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['AIRTIME'], marker='o', linestyle='-', color='b')
+plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['AIRTIME'], marker='o', linestyle='-', color='r')
+plt.xlabel("Index")
+plt.ylabel("Airtime [s]")
 
 plt.show()
