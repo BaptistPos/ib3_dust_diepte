@@ -18,7 +18,7 @@ Nog niet getest als de sensor in een medium zit (onder de grond): ```data_huis_c
 - 2407-003-0078: midden
 
 ### Testopstelling - GARAGE
-Nog niet getest als de sensor in een medium zit (onder de grond): ``````data_garage.json``````
+Nog niet getest als de sensor in een medium zit (onder de grond): ```data_garage.json```
 
 #### Gateways:
 - ttn-vives-indoor-06: internet
@@ -29,3 +29,16 @@ Nog niet getest als de sensor in een medium zit (onder de grond): ``````data_gar
 
 #### Sensoren:
 - 2211-001-0003: midden
+
+### Testopstelling - SCHOOL: 02.45
+Testen met sensor boven EN in medium (zand), m.a.w. boven/onder de grond: 
+
+#### Gateways:
+- ttn-vives-indoor-05: test opstelling, verste stopcontact
+- ttn-vives-indoor-06: naast deur (achter opberg rek), verste stopcontact
+- ttn-vives-indoor-07: verste hoek (verlengkabel), verste stopcontact
+- ttn-vives-indoor-11: tegenover (oranje testopstelling)
+- ttn-vives-indoor-13: buis, verste stopcontact
+
+#### Sensoren:
+- 2211-001-0003: 27 cm, breedte & 18 cm, hoogte & antenne mee met de pijl

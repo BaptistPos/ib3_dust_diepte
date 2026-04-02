@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-AG2AG_PATH = "ib3_dust_diepte\data\data_garage.json"
-UG2AG_PATH = "ib3_dust_diepte\data\data_huis_midden.json"
+AG2AG_PATH = "data_02_45\data_AG2AG.json"
+UG2AG_PATH = "data_02_45\data_UG2AG_100mm.json"
 
 def get_json(path):
     s_id, s_cnt, s_sensor, s_airtime, s_bw, s_sf = [], [], [], [], [], []
@@ -78,27 +78,27 @@ for gateway in target_gateway:
     
     ax1.set_xlabel('# Pakket')
     ax1.set_ylabel('RSSI (---) [dBm]')
-    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='b') # AG2AG_SENSOR['CNT']
-    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], marker='o', linestyle='-', color='r') # UG2AG_SENSOR['CNT']
+    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], linestyle='-', color='b') # AG2AG_SENSOR['CNT']
+    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], linestyle='-', color='r') # UG2AG_SENSOR['CNT']
     
     ax1.set_xlabel('Index')
     ax2 = ax1.twinx()
     ax2.set_yticklabels([])
     ax2.set_ylabel('SNR (- - -) [dB]')
-    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='b') # AG2AG_SENSOR['CNT']
-    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], marker='o', linestyle='--', color='r') # UG2AG_SENSOR['CNT']
+    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], linestyle='--', color='b') # AG2AG_SENSOR['CNT']
+    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], linestyle='--', color='r') # UG2AG_SENSOR['CNT']
 
 plt.figure('Packet Count')
 plt.title('AG2AG (blauw) vs UG2AG (rood): Packet Count')
-plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['CNT'], marker='o', linestyle='-', color='b')
-plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['CNT'], marker='o', linestyle='-', color='r')
+plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['CNT'], linestyle='-', color='b')
+plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['CNT'], linestyle='-', color='r')
 plt.xlabel("Index")
 plt.ylabel("Packet")
 
 plt.figure('Airtime')
 plt.title('AG2AG (blauw) vs UG2AG (rood): Airtime')
-plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['AIRTIME'], marker='o', linestyle='-', color='b')
-plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['AIRTIME'], marker='o', linestyle='-', color='r')
+plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['AIRTIME'], linestyle='-', color='b')
+plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['AIRTIME'], linestyle='-', color='r')
 plt.xlabel("Index")
 plt.ylabel("Airtime [s]")
 
