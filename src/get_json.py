@@ -2,9 +2,10 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import statistics
 
-AG2AG_PATH = "data_02_45\data_AG2AG.json"
-UG2AG_PATH = "data_02_45\data_UG2AG_100mm.json"
+AG2AG_PATH = "data_02_45\data_200_AG2AG.json"
+UG2AG_PATH = "data_02_45\data_200_UG2AG_300mm.json"
 
 def get_json(path):
     s_id, s_cnt, s_sensor, s_airtime, s_bw, s_sf = [], [], [], [], [], []
@@ -72,34 +73,38 @@ for gateway in target_gateway:
     AG2AG_df_filtered = AG2AG_DATA.xs(gateway, level=1)
     UG2AG_df_filtered = UG2AG_DATA.xs(gateway, level=1)
     
+    AG2AG_mean_rssi = round(statistics.mean(AG2AG_df_filtered["RSSI"]), 2)
+    AG2AG_mean_snr = round(statistics.mean(AG2AG_df_filtered["SNR"]), 2)
+    UG2AG_mean_rssi = round(statistics.mean(UG2AG_df_filtered["RSSI"]), 2)
+    UG2AG_mean_snr = round(statistics.mean(UG2AG_df_filtered["SNR"]), 2)
+    
     fig, ax1 = plt.subplots()
-    plt.title(f'AG2AG (blauw) vs UG2AG (rood): {gateway}')
+    plt.title(f'AG2AG vs UG2AG: {gateway}')
     plt.grid(True, linestyle='--', alpha=0.7)
+    plt.text(0.1, 0.025, f'AG2AG rssi mean: ${AG2AG_mean_rssi}$', fontsize=11, transform=plt.gcf().transFigure, color='b')
+    plt.text(0.35, 0.025, f'UG2AG rssi mean: ${UG2AG_mean_rssi}$', fontsize=11, transform=plt.gcf().transFigure, color='r')
+    plt.text(0.6, 0.025, f'AG2AG snr mean: ${AG2AG_mean_snr}$', fontsize=11, transform=plt.gcf().transFigure, color='b')
+    plt.text(0.85, 0.025, f'UG2AG snr mean: ${UG2AG_mean_snr}$', fontsize=11, transform=plt.gcf().transFigure, color='r')
     
     ax1.set_xlabel('# Pakket')
-    ax1.set_ylabel('RSSI (---) [dBm]')
-    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], linestyle='-', color='b') # AG2AG_SENSOR['CNT']
-    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], linestyle='-', color='r') # UG2AG_SENSOR['CNT']
+    ax1.set_ylabel('RSSI [dBm]')
+    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['RSSI'], linestyle='-', color='b', label='AG2AG: RSSI')
+    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['RSSI'], linestyle='-', color='r', label='UG2AG: RSSI')
     
     ax1.set_xlabel('Index')
     ax2 = ax1.twinx()
     ax2.set_yticklabels([])
-    ax2.set_ylabel('SNR (- - -) [dB]')
-    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], linestyle='--', color='b') # AG2AG_SENSOR['CNT']
-    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], linestyle='--', color='r') # UG2AG_SENSOR['CNT']
+    ax2.set_ylabel('SNR [dB]')
+    ax1.plot(AG2AG_df_filtered.index, AG2AG_df_filtered['SNR'], linestyle='--', color='b', label='AG2AG: SNR')
+    ax1.plot(UG2AG_df_filtered.index, UG2AG_df_filtered['SNR'], linestyle='--', color='r', label='UG2AG: SNR')
+    ax1.legend()
 
-plt.figure('Packet Count')
-plt.title('AG2AG (blauw) vs UG2AG (rood): Packet Count')
-plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['CNT'], linestyle='-', color='b')
-plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['CNT'], linestyle='-', color='r')
-plt.xlabel("Index")
-plt.ylabel("Packet")
+cnt_air = {'AG2AG_PACKCOUNT': statistics.mean(AG2AG_SENSOR['CNT']), 
+           'UG2AG_PACKCOUNT': statistics.mean(UG2AG_SENSOR['CNT']),
+           'AG2AG_AIRTIME': statistics.mean(AG2AG_SENSOR['AIRTIME']),
+           'UG2AG_AIRTIME': statistics.mean(UG2AG_SENSOR['AIRTIME'])}
 
-plt.figure('Airtime')
-plt.title('AG2AG (blauw) vs UG2AG (rood): Airtime')
-plt.plot(AG2AG_SENSOR.index, AG2AG_SENSOR['AIRTIME'], linestyle='-', color='b')
-plt.plot(UG2AG_SENSOR.index, UG2AG_SENSOR['AIRTIME'], linestyle='-', color='r')
-plt.xlabel("Index")
-plt.ylabel("Airtime [s]")
-
-plt.show()
+s = pd.Series(cnt_air)
+s.index = pd.MultiIndex.from_tuples([tuple(idx.split('_')) for idx in s.index])
+df = s.unstack()
+print(df)
